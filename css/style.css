@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
+#loader {
+  /* background: rgb(230, 164, 78); */
+  background: white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+#loader img {
+    margin-top: 200px;
+    margin-left: 550px;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    animation: spinner 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+#banner {
+  background: linear-gradient(rgba(255, 241, 241, 0.5),white), url("../assets/elephant.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* opacity: 0.4; */
+}
+
+.logo {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+}
+
+.banner-text {
+  text-align: center;
+  padding-top: 180px;
+}
+
+.banner-text h1 {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  color:rgb(18, 182, 174)
+}
+
+.banner-text p {
+  font-size: 30px;
+  font-style: italic;
+  color: orange;
+  font-weight: bold;
+}
+
+.banner-btn {
+  margin: 70px auto 0;
+}
+
+.banner-btn a {
+  width: 150px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: rgb(18, 182, 174);
+  border: 2px solid rgb(18, 182, 174)
+
+}
