@@ -44,12 +44,13 @@
   }
 
 
-#banner {
+#banner, #contactus {
   background: linear-gradient(rgba(255, 241, 241, 0.5),white), url("../assets/elephant.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-repeat: no-repeat;
+  margin-top: -220px;
   /* opacity: 0.4; */
 }
 
@@ -70,7 +71,8 @@
   background: none;
   outline: none;
   border: none;
-  margin-left: 1280px;
+  margin-top: 230px;
+  margin-left: 1100px;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
@@ -81,6 +83,7 @@
   background-color: orange;
   margin: 6px 0px;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .hamburger.is-active:before {
@@ -168,5 +171,170 @@ nav a:hover{
 .banner-btn a:hover {
   background: rgb(18, 182, 174);
   color: white;
+}
+
+/* services section slider */
+
+.image-sliderfade {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+  height: 500px;
+}
+
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: -40px;
+}
+
+.text {
+  color: #f2f2f2;
+  padding: 20px 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+.text p {
+  font-size: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: #ddd;
+  border-width: 5 px;
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  transition: border-color 0.6s ease;
+}
+
+.active {
+  border-color: #666;
+}
+
+/* Animation */
+.fade {
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade-image;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-image {
+  from {
+      opacity: 0.4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fade-image {
+  from {
+      opacity: 0.4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+      font-size: 11px;
+  }
+}
+
+/* services slider end */
+
+#courses {
+  background: url("../assets/computers.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 130vh;
+  background-repeat: no-repeat;
+}
+
+#courses h1, #services h1, #contactus h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  /* color: rgba(87, 85, 85, 0.596); */
+  padding-top: 30px;
+  color:rgb(68, 67, 67);
+}
+
+.course-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(95, 93, 93, 0.596);
+  height: 100vh;
+}
+
+.course-container div{
+  color: rgb(49, 49, 49);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.course-container h4, .contact-container h4 {
+  font-size: 25px;
+}
+
+.course-container li {
+  font-size: 20px;
+  list-style-type: square;
+}
+
+
+#contactus{
+  height: 100vh;
+}
+
+#contactus h1{
+  padding-top: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: rgba(95, 93, 93, 0.596); */
+  /* height: 30vh; */
+}
+
+.contact-container div {
+  color: rgb(49, 49, 49);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  /* margin: 10px; */
+  padding: 20px;
+  margin-top: -50px;
+}
+
+#map {
+  margin-left: 50px;
+}
+
+#contact img{
+  width: 20%;
+  height: 10%;
+  cursor: pointer;
 }
 
